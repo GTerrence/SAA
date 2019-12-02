@@ -91,6 +91,7 @@
         BT_Start.Visible = True
         LB5.Visible = True
         LB_Ukuran.Visible = True
+        Timer1.Enabled = False
     End Sub
 
     Private Sub BT_Start_Click(sender As Object, e As EventArgs) Handles BT_Start.Click
