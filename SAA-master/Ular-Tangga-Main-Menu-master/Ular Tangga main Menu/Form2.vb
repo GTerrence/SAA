@@ -4,7 +4,7 @@
     Dim P(10, 3) As Integer 'posisi ular sama posisi tangga
     Dim A As Integer 'angka dadu
     Dim B As Integer = 0 'angka papan
-    Dim C, R, T, U, V, D As Integer 'c=jalan brp kali , R = jumlah player, T = besar papan, U = jml tangga, V = jml ular, D = IDIOT
+    Dim C, R, T, U, V, D, W As Integer 'c=jalan brp kali , R = jumlah player, T = besar papan, U = jml tangga, V = jml ular, D = IDIOT
     Dim Rndm As New Random
     Dim F As Integer = 0 'player yang main
     Dim G(10, 1) As Integer ' koordinat ular
@@ -264,29 +264,27 @@
             If S(F) = T * T Then
                 MsgBox("Menang")
             End If
-            If A = 6 Then
-                F = F - 1
-                If F < 0 Then
-                    F = R - 1
-                End If
-            End If
         End If
     End Sub
     Private Sub BtnCheat_Click(sender As Object, e As EventArgs) Handles BtnCheat.Click
         Tm1.Enabled = True
         A = TbCheat.Text
         C = 0
-        If F = 0 Then
-            F = 1
-        ElseIf F = 1 Then
-            F = 2
-        ElseIf F = 2 Then
-            F = 3
-        ElseIf F = 3 Then
-            F = 0
-        End If
-        If F = R Then
-            F = 0
+        If A <> 6 Then
+            If W = 1 Then
+                W = 0
+            Else
+                If F = R - 1 Then
+                    F = 0
+                Else
+                    F += 1
+                End If
+            End If
+        Else
+            If W = 0 Then
+                F += 1
+            End If
+            W = 1
         End If
         AddHandler Tm1.Tick, AddressOf Main
     End Sub

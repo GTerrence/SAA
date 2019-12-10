@@ -50,4 +50,3 @@ D:\Program\UlarTangga-master\SAA-master\Ular-Tangga-Main-Menu-master\Ular Tangga
 D:\Program\UlarTangga-master\SAA-master\Ular-Tangga-Main-Menu-master\Ular Tangga main Menu\obj\Debug\Ular Tangga main Menu.exe
 D:\Program\UlarTangga-master\SAA-master\Ular-Tangga-Main-Menu-master\Ular Tangga main Menu\obj\Debug\Ular Tangga main Menu.xml
 D:\Program\UlarTangga-master\SAA-master\Ular-Tangga-Main-Menu-master\Ular Tangga main Menu\obj\Debug\Ular Tangga main Menu.pdb
-D:\Program\UlarTangga-master\SAA-master\Ular-Tangga-Main-Menu-master\Ular Tangga main Menu\obj\Debug\Ular_Tangga_main_Menu.FormIdiot.resources
